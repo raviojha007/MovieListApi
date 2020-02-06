@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp </title>
+    <link rel="stylesheet" href="bootstrap/css/animate.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image1.jpg") no-repeat scroll bottom;
+        }
+        .form-div{
+            width: 250px;
+            text-align: center;
+            margin: 200px auto;
+            background-color: rgba(0,174,239,0.5);
+            box-shadow: 0 0 10px lightblue;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .form-div h2{
+            color: white;
+            margin: 10px;
+        }
+        .form-div img{
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px lightblue;
+        }
+        .inputField{
+            text-align: center;
+            font-size: 18px;
+            height: 35px;
+            width: 200px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            background: transparent;
+            border-bottom: 3px solid lightblue;
+            color: white;
+        }
+        .inputField:focus{
+            border-bottom: 3px solid white;
+        }
+        ::placeholder{
+            color: lightblue;
+        }
+        #login-btn{
+            background-color: #00aeef;
+            color: white;
+            border: none;
+            font-size: 18px;
+            margin: 15px;
+            padding: 10px 25px;
+            width: 150px;
+            border-radius: 50px;
+            box-shadow: 0 0 5px black;
+        }
+        #login-btn:hover{
+            background-color: #12a4db;
+            cursor: pointer;
+        }
+        #error-msg h3{
+    background-color: lightblue;
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    color: white;
+}
+    </style>
+</head>
+<body>
+
+    <div id="error-msg">
+
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-div animated jackInTheBox">
+        <img src="img/user.png">
+        <h2>Sign Up Here</h2>
+        <form   action="MovieList.html" onsubmit=" return validateForm()" class="login-form" id="login-form">
+            <input type="text" placeholder="Full Name"  id="fullname"class="inputField">
+            <br>
+            <input type="email" placeholder="Email" id="email" class="inputField">
+            <br>
+            <input type="password" placeholder="Password" id="password" class="inputField">
+            <br>
+            <input type="submit" value="Sign Up" id="login-btn">
+        </form>
+    </div>
+<script src="Script/Script.js"></script>
+</body>
+</html>
