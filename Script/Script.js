@@ -129,7 +129,7 @@ $(document).ready(() => {
 
   
   function getMovies(searchText){
-    axios.get('http://www.omdbapi.com/?apikey=87a63bbc&s='+searchText)
+    axios.get('https://www.omdbapi.com/?apikey=87a63bbc&s='+searchText)
       .then((response) => {
         let Global = response.data.Search;
         //console.log("Global");
@@ -170,7 +170,7 @@ function getMovieInfo(){
   
   console.log(result);
   */
-  axios.get('http://www.omdbapi.com/?apikey=87a63bbc&i='+movieId)
+  axios.get('https://www.omdbapi.com/?apikey=87a63bbc&i='+movieId)
     .then((response) => {
       console.log(response);
       let movie = response.data;
